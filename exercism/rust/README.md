@@ -7,22 +7,18 @@ Rust, to help developers practice and improve their skills.
 
 ## Structure
 
-This repository follows a specific structure to organize the solutions to
-different exercises:
-
+Each exercise is represented by a separate folder within the repository.
+These folders correspond to individual Cargo projects and contain the
+following files and directories:
+* `src/`:
+	Directory containing the source code files for the exercise.
+* `tests/`:
+	Directory containing the test suite for the exercise.
 * `README.md`:
-	Provides an overview of the repository.
-* `LICENSE`:
-	Contains the CC0 Public Domain License, which governs the use of the code in
-	this repository.
-* Exercise Folders:
-	Each exercise is represented by a separate folder within the repository.
-	These folders correspond to individual Cargo projects and contain the
-	following files and directories:
-  - `src/`:
-		Directory containing the source code files for the exercise.
-  - `tests/`:
-		Directory containing the test suite for the exercise.
+	Markdown file containing the exercise description and instructions.
+* Additionally, some exercises may contain a `Cargo.toml` file. This file
+	contains metadata about the Cargo project and is not directly related to the
+	exercise.
 
 ## Contributing
 
