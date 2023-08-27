@@ -24,7 +24,7 @@ or submit a pull request.  Your feedback is always welcome!
 
 ## Acknowledgements
 
-Special thanks to [Exercism](https://exercism.io/) for providing a platform that
+Special thanks to [Exercism](https://exercism.org/) for providing a platform that
 offers high-quality coding exercises to improve programming skills.
 
 ---
