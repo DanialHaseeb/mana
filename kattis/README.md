@@ -11,7 +11,7 @@ algorithms, data structures, and language-specific idioms.
 C++ is by far the most highly recommended language to use on competitive
 programming platforms, so that is what I chose to use here too.
 
-# Structure
+## Structure
 
 Each problem is represented by a separate folder within the repository and
 contain the following files:
