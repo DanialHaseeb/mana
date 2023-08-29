@@ -21,7 +21,7 @@ auto main() -> int
 
   cin >> n;
 
-  for (int i = 0; i < n; i++)
+  for (int i = 0; i < n; ++i)
 	{
 		/// The sum of the two scores.
 		int s{};
@@ -36,7 +36,7 @@ auto main() -> int
 		 *
 		 * This must always be the case because the sum and difference are both integers.
 		 *
-		 * @example s = 10, d = 4 -> (10 + 4) % 2 = 0
+		 * @example s = 10, d = 4  ==>  (10 + 4) % 2 = 0
 		 *
 		 * @see https://en.wikipedia.org/wiki/Parity_(mathematics)
 		*/
