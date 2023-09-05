@@ -12,6 +12,10 @@ using namespace std;
 
 auto main() -> int
 {
+	// Optimise I/O operations
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+
 	/// The point on `B` where `A` is zero.
 	int x{};
 
