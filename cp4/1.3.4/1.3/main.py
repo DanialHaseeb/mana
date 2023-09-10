@@ -1,19 +1,17 @@
-from datetime import datetime
+"""
+Competitive Programming 4
 
-def day(date: datetime):
-	days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-	return days[date.weekday()]
+1.3.4.1.3
 
-# Input date as yyyy-mm-dd.
-date = input("Enter a date (yyyy-mm-dd): ")
-format = "%Y-%m-%d"
+:author: Danial Haseeb
+"""
 
-past_date = datetime.strptime(date, format)
-current_date = datetime.now()
+from datetime import date
 
-# Calculate the day of the week and the number of days elapsed.
-weekday = day(past_date)
-days_elapsed = (current_date - past_date).days
+date_launch = date(2010, 8, 9)
+date_today = date.today()
 
-print(f"The day of the week on {date} was {weekday}.")
-print(f"Number of days elapsed since that day until today is {days_elapsed}.")
+difference = (date_today - date_launch).days
+
+print(date_launch.strftime("%A"))
+print(f"{difference} day(s) ago")

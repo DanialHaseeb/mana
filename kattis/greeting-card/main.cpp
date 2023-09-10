@@ -1,3 +1,10 @@
+/**
+ * Greeting Card
+ * @see https://open.kattis.com/problems/greetingcard
+ *
+ * @author Danial Haseeb
+ */
+
 #include <iostream>
 #include <vector>
 #include <unordered_set>

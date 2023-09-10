@@ -1,3 +1,10 @@
+/**
+ * Awkward Party
+ * @see https://open.kattis.com/problems/awkwardparty
+ *
+ * @author Danial Haseeb
+ */
+
 #include <iostream>
 #include <unordered_map>
 #include <cstddef>
