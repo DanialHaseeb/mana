@@ -13,7 +13,7 @@ using namespace std;
 
 auto main() -> int
 {
-	// Optimise I/O operations
+	// Optimise I/O operations.
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
@@ -22,7 +22,7 @@ auto main() -> int
 
 	cin >> n;
 
-	/// The sequence of bites or mumbles
+	/// The sequence of bites or mumbles.
 	vector<int> a;
 
 	for (int i{}; i < n; ++i)
@@ -38,17 +38,17 @@ auto main() -> int
 		{ a.push_back(stoi(word)); }
 	}
 
-	// Check if the length of a does not match the expected length
+	// Check if the length of a does not match the expected length.
 	if (a.size() != n)
 	{
 		cout << "something is fishy\n";
 		return 0;
 	}
 
-	/// Variable to track the expected value in sequence
+	/// Variable to track the expected value in sequence.
 	auto realCount{ 1 };
 
-	// Check the sequence to ensure correctness
+	// Check the sequence to ensure correctness.
 	for (auto arlidCount : a)
 	{
 		// If the count does not match the expected value and is not a mumble,
@@ -62,7 +62,7 @@ auto main() -> int
 		++realCount;
 	}
 
-	// If the loop completes without an error, the sequence makes sense
+	// If the loop completes without an error, the sequence makes sense.
 	cout << "makes sense\n";
 
 	return 0;
