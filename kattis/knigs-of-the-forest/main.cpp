@@ -1,3 +1,10 @@
+/**
+ * Knigs of the Forest
+ * @see https://open.kattis.com/problems/knigsoftheforest
+ *
+ * @author Danial Haseeb
+*/
+
 #include <iostream>
 #include <queue>
 #include <map>

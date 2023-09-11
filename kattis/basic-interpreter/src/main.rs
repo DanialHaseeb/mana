@@ -1,3 +1,7 @@
+/// [`BASIC` Interpreter](https://open.kattis.com/problems/basicinterpreter?editsubmit=11568320)
+/// **Author:** Danial Haseeb
+
+
 use std::io;
 use std::collections::{BTreeMap, HashMap};
 
