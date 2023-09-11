@@ -14,7 +14,7 @@ using namespace std;
 
 auto main() -> int
 {
-	// Optimise I/O operations
+	// Optimise I/O operations.
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
