@@ -1,3 +1,10 @@
+/**
+ * Golomb Rulers
+ * @see https://open.kattis.com/problems/golombrulers
+ *
+ * @author Danial Haseeb
+ */
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -6,12 +13,6 @@
 #include <utility>
 
 using namespace std;
-
-auto isValid(const vector<int>& ruler) -> bool
-{
-
-	return true;
-}
 
 auto main() -> int
 {
@@ -32,9 +33,10 @@ auto main() -> int
 		{ ruler.push_back(mark); }
 
 		const auto size{ ruler.size() };
-		const auto max{ *max_element(ruler.begin(), ruler.end()) };
+		const auto max{ static_cast<size_t>(*max_element(ruler.begin(), ruler.end())) };
 
-		vector<int> occurences(max, 0);
+		// Changed the size of the vector to max + 1
+		vector<int> occurences(max + 1, 0);
 
 		for (size_t i{ 0 }; i < size; ++i)
 		{
@@ -47,20 +49,39 @@ auto main() -> int
 
 		vector<size_t> missing;
 		auto isValid{ true };
-		auto isPerfect{ true};
+		auto isPerfect{ true };
 
-		for (size_t distance{ 1 }; distance < size; ++distance)
+		for (size_t distance{ 1 }; distance < max; ++distance)
 		{
 			if (occurences[distance] != 1)
-			{ isPerfect = false; }
-
-			if (occurences[distance] == 0)
 			{
-				isValid = false;
-				missing.push_back(distance);
-			}
+				isPerfect = false;
 
+				if (occurences[distance] == 0)
+				{ missing.push_back(distance); }
+				else
+				{ isValid = false; }
+			}
 		}
+
+		if (not isValid)
+		{
+			cout << "not a ruler\n";
+			continue;
+		}
+
+		if (not isPerfect)
+		{
+			cout << "missing";
+
+			for (const auto& distance : missing)
+			{ cout << " " << distance; }
+
+			cout << "\n";
+			continue;
+		}
+
+		cout << "perfect\n";
 	}
 
 	return 0;
