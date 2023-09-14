@@ -51,15 +51,15 @@ auto main() -> int
 
 		for (size_t distance{ 1 }; distance < size; ++distance)
 		{
+			if (occurences[distance] != 1)
+			{ isPerfect = false; }
+
 			if (occurences[distance] == 0)
 			{
 				isValid = false;
 				missing.push_back(distance);
 			}
-			else if (occurences[distance] > 1)
-			{
-				isPerfect = false;
-			}
+
 		}
 	}
 
