@@ -1,4 +1,4 @@
-/// [`BASIC` Interpreter](https://open.kattis.com/problems/basicinterpreter?editsubmit=11568320)
+/// [`BASIC` Interpreter](https://open.kattis.com/problems/basicinterpreter)
 /// **Author:** Danial Haseeb
 
 
