@@ -1,0 +1,1 @@
+/Users/danial/Developer/mana/kattis/fooling-around/target/release/fooling-around: /Users/danial/Developer/mana/kattis/fooling-around/src/lib.rs /Users/danial/Developer/mana/kattis/fooling-around/src/main.rs
