@@ -34,9 +34,7 @@ auto main() -> int
 			reverse(temp.begin() + j, temp.end());
 
 			if (temp < best)
-			{
-				best = temp;
-			}
+			{ best = temp; }
 		}
 	}
 
