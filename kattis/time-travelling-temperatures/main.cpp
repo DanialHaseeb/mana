@@ -1,6 +1,6 @@
 /**
  * Time Travelling Temperatures
- * Solves the problem described at https://open.kattis.com/problems/temperature
+ * @see https://open.kattis.com/problems/temperature
  *
  * @author Danial Haseeb
  */
