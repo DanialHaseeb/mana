@@ -71,7 +71,7 @@ auto connect(vector<string>& image, const array<char, 62>& dots)
 			const auto start{ min(x1, x2) };
 			const auto end{ max(x1, x2) };
 
-			for(auto j{ start }; j < end; ++j)
+			for (auto j{ start }; j < end; ++j)
 			{
 				const auto pixel{ image[y][j] };
 
@@ -87,7 +87,7 @@ auto connect(vector<string>& image, const array<char, 62>& dots)
 			const auto start{ min(y1, y2) };
 			const auto end{ max(y1, y2) };
 
-			for(auto j{ start }; j < end; ++j)
+			for (auto j{ start }; j < end; ++j)
 			{
 				const auto pixel{ image[j][x] };
 
@@ -107,7 +107,7 @@ auto connect(vector<string>& image, const array<char, 62>& dots)
 */
 auto output(const vector<string>& image)
 {
-	for(const auto& row : image)
+	for (const auto& row : image)
 	{ cout << row << '\n'; }
 }
 

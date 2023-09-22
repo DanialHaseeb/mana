@@ -15,11 +15,15 @@ using u64 = unsigned long long;
 
 auto main() -> int
 {
+	// Optimise I/O operations.
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+
 	u64 c;
 	u64 n;
 	u64 m;
 
-  cin >> c >> n >> m;
+	cin >> c >> n >> m;
 
 	vector<u64> days;
 
