@@ -4,7 +4,6 @@ Square Deal
 :see: https://open.kattis.com/problems/squaredeal
 
 :author: Danial Haseeb
-
 """
 
 import sys

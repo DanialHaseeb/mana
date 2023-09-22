@@ -4,11 +4,10 @@ Dreamer
 :see: https://open.kattis.com/problems/dreamer
 
 :author: Danial Haseeb
-
 """
 
-import itertools
 import sys
+import itertools
 
 
 def is_leap(year: int):
