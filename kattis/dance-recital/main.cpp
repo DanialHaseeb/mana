@@ -62,7 +62,7 @@ auto main() -> int
 	for (size_t i{ 0 }; i < r; ++i)
 	{ cin >> routines[i]; }
 
-	// Compute quick changes for all pairs
+	// Compute quick changes for all pairs.
 	for (size_t i{ 0 }; i < r; ++i)
 	{
 		for (size_t j{ i + 1 }; j < r; ++j)
@@ -82,7 +82,7 @@ auto main() -> int
 	 * Setting the mask to 1 << i (i.e., 2^i) means that only routine i is
 	 * selected (since only the ith bit is turned on).
 	 */
-	for(size_t i{ 0 }; i < r; ++i)
+	for (size_t i{ 0 }; i < r; ++i)
 	{
 		const auto mask{ static_cast<size_t>(1) << i };
 		dp[mask][i] = 0;
@@ -116,10 +116,7 @@ auto main() -> int
 	int minQuickChanges = numeric_limits<int>::max();
 
 	for (size_t i{ 0 }; i < r; ++i)
-	{
-		const auto selected{ (static_cast<size_t>(1) << r) - 1 };
-		minQuickChanges = min(minQuickChanges, dp[selected][i]);
-	}
+	{ minQuickChanges = min(minQuickChanges, dp[subsets - 1][i]); }
 
 	cout << minQuickChanges << '\n';
 
