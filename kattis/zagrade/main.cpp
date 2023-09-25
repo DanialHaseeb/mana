@@ -16,6 +16,10 @@ using namespace std;
 
 auto main() -> int
 {
+	// Optimise I/O operations.
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+
 	string expression{};
 	cin >> expression;
 	const auto n{ expression.size() };
