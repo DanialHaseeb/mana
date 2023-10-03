@@ -19,11 +19,15 @@ for _ in (1...datasets)
 		.split(separator: " ")
 		.map { Int($0)! }
 
-	var best = Int()
-	var sum = Int()
-	var i = Int()
-	var minI = Int()
-	var hasMin = Bool()
+
+	var best = 0
+	var current = 0
+
+	var mIndex = 0
+	var hasMin = false
+
+
+	var i = 0
 
 	while i < n
 	{
@@ -31,7 +35,7 @@ for _ in (1...datasets)
 
 		if datum < m
 		{
-			sum = 0
+			current = 0
 			hasMin = false
 			i += 1
 			continue
@@ -42,21 +46,21 @@ for _ in (1...datasets)
 			if hasMin
 			{
 				hasMin = false
-				i = minI + 1
-				sum = 0
+				i = mIndex + 1
+				current = 0
 				continue
 			}
 			else
 			{
 				hasMin = true
-				minI = i
+				mIndex = i
 			}
 		}
 
-		sum += datum
+		current += datum
 
 		if hasMin
-		{ best = max(sum, best) }
+		{ best = max(current, best) }
 
 		i += 1
 	}
