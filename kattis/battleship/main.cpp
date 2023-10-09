@@ -153,11 +153,9 @@ auto main() -> int
 		}
 
 		// Print the result.
-		if (hasShips(ships1) and hasShips(ships2))
-		{ cout << "draw\n"; }
-		else if (hasShips(ships1))
+		if (hasShips(ships1) and not hasShips(ships2))
 		{ cout << "player one wins\n"; }
-		else if (hasShips(ships2))
+		else if (hasShips(ships2) and not hasShips(ships1))
 		{ cout << "player two wins\n"; }
 		else
 		{ cout << "draw\n"; }
