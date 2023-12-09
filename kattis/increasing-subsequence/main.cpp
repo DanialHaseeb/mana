@@ -18,7 +18,7 @@ auto main() -> int
     vector<size_t> lengths(n, 1);
     vector<vector<int>> indices(n);
 
-    for (int i = 0; i < n; i++)
+    for (auto i{ 0 }; i < n; ++i)
 		{ cin >> sequence[i]; }
 
     auto maxLength{ 1 };
